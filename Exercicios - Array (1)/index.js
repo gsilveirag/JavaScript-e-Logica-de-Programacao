@@ -18,7 +18,11 @@ do{
             break
         case 2 :
             const nomeConsultar = listaPaciente.shift()
-            alert (`Paciente a ser contultado: ${nomeConsultar}`)
+            if(nomeConsultar){
+                alert (`Paciente a ser contultado: ${nomeConsultar}`)
+            }else {
+                alert("Paciente nao encontrado.")
+            }
             break
         case 3 :
             alert("Encerrando...")
@@ -27,6 +31,6 @@ do{
             alert("Opção Invalida!")
             break 
     }
-} while (opcaoReal != 3) {
+} while (opcaoReal !== 3) {
     alert("Programa Encerrado!")
 }
